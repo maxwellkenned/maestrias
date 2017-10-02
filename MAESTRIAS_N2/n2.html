@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>MAESTRIAS</title>
+    <link type="text/css" rel="stylesheet" href="../css/bootstrap.min.css" />
+  </head>
+  <body>
+    <head>
+      <h1 class="text-center">MAESTRIAS N2</h1>
+    </head>
+    <div class="table-responsive container" >
+
+      <div class="row mb-3 mt-3 ml-1 container">
+        <div class="input-group col-md-4" >
+          <span class="input-group-addon" id="basic-addon1">Grupo</span>
+          <input type="text" name="pGrupo" value="" onkeyup="AtListaGrupo({'grupo': 'grupo', 'value': this.value})" class="form-control" placeholder="Grupo" aria-label="Grupo" aria-describedby="basic-addon1">
+        </div>
+        <div class="input-group col-md-4" >
+          <span class="input-group-addon" id="basic-addon1">Descrição</span>
+          <input type="text" name="pDesc" value="" onkeyup="AtListaGrupo({'grupo': 'desc', 'value': this.value})" class="form-control" placeholder="Descrição" aria-label="Descrição" aria-describedby="basic-addon1">
+        </div>
+        <div class="input-group col-md-4" >
+          <span class="input-group-addon" id="basic-addon1">FAQ</span>
+          <input type="text" name="pFaq" value="" onkeyup="AtListaGrupo({'grupo': 'faq', 'value': this.value})" class="form-control" placeholder="FAQ" aria-label="FAQ" aria-describedby="basic-addon1">
+        </div>
+      </div>
+      <table class="table table-hover table-bordered table-sm table-striped">
+        <thead class="thead-default">
+          <tr>
+            <th>Nivel</th>
+            <th>Grupo</th>
+            <th>FAQ</th>
+            <th>Descrição</th>
+            <th>TM FAQ</th>
+          </tr>
+        </thead>
+        <tbody id="tableFaq">
+        </tbody>
+      </table>
+    </div>
+
+
+
+    <script type="text/javascript" src="../js/jquery.js"></script>
+    <script type="text/javascript" src="../js/popper.js"></script>
+    <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/maestria.js"></script>
+    <script type="text/javascript" src="js/bd.js"></script>
+    <script type="text/javascript" src="js/js.js"></script>
+
+  </body>
+</html>
