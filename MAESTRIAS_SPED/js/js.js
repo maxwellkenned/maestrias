@@ -1,4 +1,4 @@
-$.getScript( "bd.js" ).done(function( script, textStatus ) {
+$.getScript( "./js/bd.js" ).done(function( script, textStatus ) {
     console.log( textStatus );
   });
 var m = ARRAYFAQ;
