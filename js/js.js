@@ -41,7 +41,7 @@ function lista(bd, query = {}){
       html += "<td id='nivel'>"+c.nivel+"</td>";
       html += "<td id='grupo'>"+c.grupo+"</td>";
       html += "<td id='faq'>"+c.faq+"</td>";
-      html += "<td id='desc'>"+c.desc+"</td>";
+      html += "<td id='desc' class='text-justify'>"+c.desc+"</td>";
       html += "<td id='tmfaq'>"+c.tmfaq+"</td>";
       html += "</tr>";
     });
@@ -52,6 +52,9 @@ function lista(bd, query = {}){
 function setCor(c){
   var cor;
   switch(c){
+    case 1:
+      cor = "";
+      break;
     case 1:
       cor = "#d5ffe0";
       break;
@@ -65,7 +68,7 @@ function setCor(c){
       cor = "#c7dba7";
       break;
     default:
-      cor = '';
+      cor = "";
     break;
   }
   return cor;
