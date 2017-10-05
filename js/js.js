@@ -52,7 +52,7 @@ function lista(bd, query = {}){
 function setCor(c){
   var cor;
   switch(c){
-    case 1:
+    case 0:
       cor = "";
       break;
     case 1:
