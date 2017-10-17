@@ -1,49 +1,25 @@
+var colorBW = $("#colorBW");
 function lista(bd, query = {}){
   var html = '';
   var ARRAYFAQ = bd;
-  var colorBW = $("#colorBW");
   $("#tableFaq tr, td").remove();
   if(!$.isEmptyObject(query)){
     $.each(query, function(i, d){
-      var value = d.value;
       var grupo = d.grupo;
+      var desc = d.desc;
+      var faq = d.faq;
 
       $.each(ARRAYFAQ, function(i, c) {
-        var cor = colorBW[0].checked?'':setCor(c.nivel);
-        if(grupo == "faq"){
-          if((c[grupo].toString()).indexOf(value.toString()) != -1){
-            html += "<tr style='background-color:"+cor+"'>";
-            html += "<td id='nivel' >"+c.nivel+"</td>";
-            html += "<td id='grupo'>"+c.grupo+"</td>";
-            html += "<td id='faq'>"+c.faq+"</td>";
-            html += "<td id='desc'>"+c.desc+"</td>";
-            html += "<td id='tmfaq'>"+c.tmfaq+"</td>";
-            html += "</tr>";
+          if( ((c["grupo"].toLowerCase()).indexOf(grupo.toLowerCase()) != -1) && ((c["desc"].toLowerCase()).indexOf(desc.toLowerCase()) != -1) && ((c["faq"].toString()).indexOf(faq.toString()) != -1)){
+            console.log(c);
+            html += createHtml(c);
           }
-        }else{
-          if((c[grupo]).toLowerCase().indexOf(value.toLowerCase()) != -1){
-            html += "<tr style='background-color:"+cor+"'>";
-            html += "<td id='nivel'>"+c.nivel+"</td>";
-            html += "<td id='grupo'>"+c.grupo+"</td>";
-            html += "<td id='faq'>"+c.faq+"</td>";
-            html += "<td id='desc'>"+c.desc+"</td>";
-            html += "<td id='tmfaq'>"+c.tmfaq+"</td>";
-            html += "</tr>";
-          }
-        }
       });
     });
     $('#tableFaq').append(html);
   } else{
     $.each(ARRAYFAQ, function(i, c) {
-      var cor = colorBW[0].checked?'':setCor(c.nivel);
-      html += "<tr style='background-color:"+cor+"'>";
-      html += "<td id='nivel'>"+c.nivel+"</td>";
-      html += "<td id='grupo'>"+c.grupo+"</td>";
-      html += "<td id='faq'>"+c.faq+"</td>";
-      html += "<td id='desc' class='text-justify'>"+c.desc+"</td>";
-      html += "<td id='tmfaq'>"+c.tmfaq+"</td>";
-      html += "</tr>";
+      html += createHtml(c);
     });
     $('#tableFaq').append(html);
   }
@@ -72,4 +48,17 @@ function setCor(c){
     break;
   }
   return cor;
+}
+
+function createHtml(c){
+  var h;
+  var cor = colorBW[0].checked?'':setCor(c.nivel);
+  h += "<tr style='background-color:"+cor+"'>";
+  h += "<td id='nivel'>"+c.nivel+"</td>";
+  h += "<td id='grupo'>"+c.grupo+"</td>";
+  h += "<td id='faq'>"+c.faq+"</td>";
+  h += "<td id='desc'>"+c.desc+"</td>";
+  h += "<td id='tmfaq'>"+c.tmfaq+"</td>";
+  h += "</tr>";
+  return h;
 }

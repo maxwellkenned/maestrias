@@ -1,8 +1,11 @@
 var m = ARRAYFAQ;
 lista(m);
-function AtListaGrupo(grupo=""){
-  if(!$.isEmptyObject(grupo.value)){
-    lista(m, {"grupo": grupo});
+function AtListaGrupo(e){
+  var grupo = $('#grupo').val();
+  var desc = $('#desc').val();
+  var faq = $('#faq').val();
+  if(grupo || desc || faq){
+    lista(m, {Filtro: {"grupo": grupo, "desc": desc, "faq": faq}});
   }else{
     lista(m);
   }
