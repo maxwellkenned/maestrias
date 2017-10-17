@@ -11,7 +11,6 @@ function lista(bd, query = {}){
 
       $.each(ARRAYFAQ, function(i, c) {
           if( ((c["grupo"].toLowerCase()).indexOf(grupo.toLowerCase()) != -1) && ((c["desc"].toLowerCase()).indexOf(desc.toLowerCase()) != -1) && ((c["faq"].toString()).indexOf(faq.toString()) != -1)){
-            console.log(c);
             html += createHtml(c);
           }
       });
