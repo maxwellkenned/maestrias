@@ -2263,3 +2263,10 @@ ARRAYFAQ.push(new Maestria(0,"PDV",4193,"Quando tenta cancelar uma mesa no Softs
 ARRAYFAQ.push(new Maestria(0,"MDF-e",4194,"Rejeiçao: Tipo de Transportador para Carga Propria e Proprietario de veiculo diferente do emitente deve ser TAC: Ocorre esse erro ao tentar emitir MDF-e",0));
 ARRAYFAQ.push(new Maestria(0,"NFE",4195,"Segmento [B13]: tag <refNFe> deve ser informada: Aparece esse erro ao tentar processar ou visualizar NFe",0));
 ARRAYFAQ.push(new Maestria(0,"PDV",4196,"Lentidao ao finalizar Cupom Eletronico no PDV",0));
+ARRAYFAQ.push(new Maestria(0,'MDF-e',4197,'O que significa ETC, TAC e CTC no MDFe?',20));
+ARRAYFAQ.push(new Maestria(0,'SOFTSHOP',4198,'Sistema não permite cadastrar vendedor: "Nome já foi usado."',15));
+ARRAYFAQ.push(new Maestria(0,'TEF',4199,'Erro: LLT Unauthorized no POS PAYGO Móvel',5));
+ARRAYFAQ.push(new Maestria(0,'NFE',4200,'The subreport "spProdutosP1" could not be found at the specified location... Aparece essa mensagem no pdf da nota gerado pelo envio de email do emissor de NFE.',10));
+ARRAYFAQ.push(new Maestria(0,'BANCO DE DADOS',4201,'Padronizar partição de HD - Alto desempenho em SQL Server',0));
+ARRAYFAQ.push(new Maestria(0,'NFE',4203,'IDENTIFICADO INVALIDO (Ao tentar imprimir uma nfe )',0));
+ARRAYFAQ.reverse();
