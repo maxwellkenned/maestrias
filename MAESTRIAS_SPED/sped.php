@@ -8,6 +8,7 @@
     <link rel="icon" href="../img/icone.png" sizes="any" type="image/png">
   </head>
   <body>
+    <?php include_once("navbar.php"); ?>
     <head>
       <h1 class="text-center">MAESTRIAS SPED</h1>
     </head>
