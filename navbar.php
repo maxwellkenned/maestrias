@@ -6,16 +6,16 @@
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="./FAQ_GERAL/faq.php">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Maestrias
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <a class="dropdown-item" href="./MAESTRIAS_N1/n1.html">Maestrias N1</a>
-            <a class="dropdown-item" href="./MAESTRIAS_SPED/sped.html">Maestrias SPED</a>
-            <a class="dropdown-item" href="./MAESTRIAS_N2/n2.html">Maestrias N2</a>
+            <a class="dropdown-item" href="./MAESTRIAS_N1/n1.php">Maestrias N1</a>
+            <a class="dropdown-item" href="./MAESTRIAS_SPED/sped.php">Maestrias SPED</a>
+            <a class="dropdown-item" href="./MAESTRIAS_N2/n2.php">Maestrias N2</a>
           </div>
           </li>
           <li class="nav-item dropdown">
