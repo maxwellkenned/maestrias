@@ -2269,4 +2269,8 @@ ARRAYFAQ.push(new Maestria(0,'TEF',4199,'Erro: LLT Unauthorized no POS PAYGO Mó
 ARRAYFAQ.push(new Maestria(0,'NFE',4200,'The subreport "spProdutosP1" could not be found at the specified location... Aparece essa mensagem no pdf da nota gerado pelo envio de email do emissor de NFE.',10));
 ARRAYFAQ.push(new Maestria(0,'BANCO DE DADOS',4201,'Padronizar partição de HD - Alto desempenho em SQL Server',0));
 ARRAYFAQ.push(new Maestria(0,'NFE',4203,'IDENTIFICADO INVALIDO (Ao tentar imprimir uma nfe )',0));
+ARRAYFAQ.push(new Maestria(0,'ADMINISTRATIVAS',4204,'VALE PARA DESCONTAR NA COMISSÃO DO FRANQUEADO',10));
+ARRAYFAQ.push(new Maestria(0,'ALTERACOES',4205,'Visualizar Relatorio antes de Imprimir',15));
+ARRAYFAQ.push(new Maestria(0,'ALTERACOES',4206,'Solicitar Senha Supervisor para liberar alteração de um campo em Formulário',15));
+
 ARRAYFAQ.reverse();
