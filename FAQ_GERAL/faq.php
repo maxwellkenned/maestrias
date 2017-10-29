@@ -26,21 +26,21 @@
     <div class="container clearfix" >
 
       <div Id="filtrosPesquisa" class="row justify-content-center mb-3 mt-3 ">
-        <div class="col-md-3">
+        <div class="col-md-4">
             <select name="pGrupo" id="grupo" class="custom-select col-md-3" onchange="AtListaGrupo()">
               <option value="">Grupo</option>
             </select>
         </div>
-        <div class="col-md-3">
+        <!-- <div class="col-md-3">
             <select name="pNivel" id="nivel" class="custom-select col-md-3" onchange="AtListaGrupo()">
               <option value="">Nível</option>
             </select>
-        </div>
-        <div class="input-group col-md-3 " >
+        </div> -->
+        <div class="input-group col-md-4 " >
           <span class="input-group-addon" id="basic-addon1">Descrição</span>
           <input type="text" name="pDesc" id="desc" value="" onkeyup="AtListaGrupo()" class="form-control" placeholder="Descrição" aria-label="Descrição" aria-describedby="basic-addon1">
         </div>
-        <div class="input-group col-md-3" >
+        <div class="input-group col-md-4" >
           <span class="input-group-addon" id="basic-addon1">FAQ</span>
           <input type="text" name="pFaq" id="faq" value="" onkeyup="AtListaGrupo()" class="form-control" placeholder="FAQ" aria-label="FAQ" aria-describedby="basic-addon1">
         </div>

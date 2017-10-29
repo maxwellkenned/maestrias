@@ -3,7 +3,7 @@ lista(m);
 AgruparSelection(m, "grupo");
 AgruparSelection(m, "nivel");
 function AtListaGrupo(e){
-  var nivel = $("#nivel").val();
+  var nivel = '';
   var grupo = $('#grupo').val();
   var desc = $('#desc').val();
   var faq = $('#faq').val();
