@@ -5,12 +5,14 @@ function lista(bd, query = {}){
   $("#tableFaq tr, td").remove();
   if(!$.isEmptyObject(query)){
     $.each(query, function(i, d){
+      console.log(d);
+      var nivel = d.nivel;
       var grupo = d.grupo;
       var desc = d.desc;
       var faq = d.faq;
 
       $.each(ARRAYFAQ, function(i, c) {
-          if( ((c["grupo"].toLowerCase()).indexOf(grupo.toLowerCase()) != -1) && ((c["desc"].toLowerCase()).indexOf(desc.toLowerCase()) != -1) && ((c["faq"].toString()).indexOf(faq.toString()) != -1)){
+          if( ((c["nivel"].toString()).indexOf(nivel.toString()) != -1) && ((c["grupo"].toLowerCase()).indexOf(grupo.toLowerCase()) != -1) && ((c["desc"].toLowerCase()).indexOf(desc.toLowerCase()) != -1) && ((c["faq"].toString()).indexOf(faq.toString()) != -1)){
             html += createHtml(c);
           }
       });
@@ -60,4 +62,20 @@ function createHtml(c){
   h += "<td id='tmfaq'>"+c.tmfaq+"</td>";
   h += "</tr>";
   return h;
+}
+function AgruparSelection(dados, grupo){
+  let array = [];
+  $.each(dados, function(i, data){
+    if(array.indexOf(data[grupo]) === -1){
+      array.push(data[grupo]);
+    }
+  });
+  AppendSelection(array, grupo);
+}
+
+function AppendSelection(array, id){
+  array.sort();
+  $.each(array, function(i, dt){
+    $("#"+id).append("<option value="+dt+">"+dt+"</option>");
+  });
 }
