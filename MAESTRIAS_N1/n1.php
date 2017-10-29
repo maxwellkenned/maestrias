@@ -27,13 +27,13 @@
 
       <div Id="filtrosPesquisa" class="row justify-content-center mb-3 mt-3 ">
         <div class="col-md-3">
-            <select name="pNivel" id="nivel" class="custom-select col-md-3" onchange="AtListaGrupo()">
-              <option value="">Nível</option>
+            <select name="pGrupo" id="grupo" class="custom-select col-md-3" onchange="AtListaGrupo()">
+              <option value="">Grupo</option>
             </select>
         </div>
         <div class="col-md-3">
-            <select name="pGrupo" id="grupo" class="custom-select col-md-3" onchange="AtListaGrupo()">
-              <option value="">Grupo</option>
+            <select name="pNivel" id="nivel" class="custom-select col-md-3" onchange="AtListaGrupo()">
+              <option value="">Nível</option>
             </select>
         </div>
         <div class="input-group col-md-3 " >
