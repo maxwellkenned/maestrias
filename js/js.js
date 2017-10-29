@@ -76,6 +76,6 @@ function AgruparSelection(dados, grupo){
 function AppendSelection(array, id){
   array.sort();
   $.each(array, function(i, dt){
-    $("#"+id).append("<option value="+dt+">"+dt+"</option>");
+    $("#"+id).append("<option value='"+dt+"'>"+dt+"</option>");
   });
 }
