@@ -2277,6 +2277,6 @@ ARRAYFAQ.push(new Maestria(0,'APLICATIVOS',4209,'Erro ao carregar arquivo: Erro 
 ARRAYFAQ.push(new Maestria(0,'SOFTSHOP',4210,'Erro encontrado na função Validacao_getValidar: Parâmetros insuficientes. Eram esperados 1: Ocorre esse erro ao chamar o modulo de validação no SOFTSHOP ou no SPED',16));
 ARRAYFAQ.push(new Maestria(0,'APLICATIVOS',4211,'Açao falhou, erro na macro "Integrar.transferenciaimportararquivo" ao executar importaçao via FTP na Tell Passo',35));
 ARRAYFAQ.push(new Maestria(0,'SOFTSHOP',4212,'Retirar Duplicidades de Registros no Sistema',50));
-ARRAYFAQ.push(new Maestria(0,'SOFTSHOP',4212,'Correções/Alterações em modulos VBA',0));
+ARRAYFAQ.push(new Maestria(0,'SOFTSHOP',4213,'Correções/Alterações em modulos VBA',0));
 
 ARRAYFAQ.reverse();
