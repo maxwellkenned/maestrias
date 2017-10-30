@@ -2272,5 +2272,11 @@ ARRAYFAQ.push(new Maestria(0,'NFE',4203,'IDENTIFICADO INVALIDO (Ao tentar imprim
 ARRAYFAQ.push(new Maestria(0,'ADMINISTRATIVAS',4204,'VALE PARA DESCONTAR NA COMISSÃO DO FRANQUEADO',10));
 ARRAYFAQ.push(new Maestria(0,'ALTERACOES',4205,'Visualizar Relatorio antes de Imprimir',15));
 ARRAYFAQ.push(new Maestria(0,'ALTERACOES',4206,'Solicitar Senha Supervisor para liberar alteração de um campo em Formulário',15));
+ARRAYFAQ.push(new Maestria(0,'COMERCIAL',4208,'VISITA DE RELACIONAMENTO CONTADOR.',45));
+ARRAYFAQ.push(new Maestria(0,'APLICATIVOS',4209,'Erro ao carregar arquivo: Erro inesperado causado pelo drivers de banco de dados externo: Ocorre esse erro ao tentar importar ou exportar uma planilha excel a partir do SOFTSHOP',0));
+ARRAYFAQ.push(new Maestria(0,'SOFTSHOP',4210,'Erro encontrado na função Validacao_getValidar: Parâmetros insuficientes. Eram esperados 1: Ocorre esse erro ao chamar o modulo de validação no SOFTSHOP ou no SPED',16));
+ARRAYFAQ.push(new Maestria(0,'APLICATIVOS',4211,'Açao falhou, erro na macro "Integrar.transferenciaimportararquivo" ao executar importaçao via FTP na Tell Passo',35));
+ARRAYFAQ.push(new Maestria(0,'SOFTSHOP',4212,'Retirar Duplicidades de Registros no Sistema',50));
+ARRAYFAQ.push(new Maestria(0,'SOFTSHOP',4212,'Correções/Alterações em modulos VBA',0));
 
 ARRAYFAQ.reverse();
