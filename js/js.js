@@ -55,7 +55,7 @@ function createHtml(c){
   var h;
   var cor = colorBW[0].checked?'':setCor(c.nivel);
   h += "<tr style='background-color:"+cor+"'>";
-  h += "<td id='nivel'>"+c.nivel+"</td>";
+  h += "<td id='nivel-faq'>"+c.nivel+"</td>";
   h += "<td id='grupo'>"+c.grupo+"</td>";
   h += "<td id='faq'>"+c.faq+"</td>";
   h += "<td id='desc'>"+c.desc+"</td>";
